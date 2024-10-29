@@ -9,6 +9,19 @@
         header { background-color: #333; padding: 1em; text-align: center; color: white; }
         nav a { color: white; margin: 0 10px; text-decoration: none; }
         main { padding: 2em; text-align: center; }
+
+        /* Animation for the "Coming Soon" message */
+        .coming-soon {
+            font-size: 1.5em;
+            margin-top: 1em;
+            color: #FF6347;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
     </style>
 </head>
 <body>
@@ -22,6 +35,9 @@
     <main>
         <h2>Your source for exciting mobile games!</h2>
         <p>Explore a variety of games that bring fun and excitement to your fingertips. Start playing now and enjoy!</p>
+        
+        <!-- Animated "Coming Soon" section -->
+        <div class="coming-soon">Coming Soon...</div>
     </main>
 </body>
 </html>
